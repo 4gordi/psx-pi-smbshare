@@ -8,10 +8,6 @@ then
     exit
 fi
 
-#restart ps3netsrv++
-pkill ps3netsrv++
-/usr/local/bin/ps3netsrv++ -d /share
-
 sudo cat <<'EOF' | sudo tee /etc/samba/smb.conf
 [global]
 server min protocol = NT1
