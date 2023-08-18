@@ -67,6 +67,8 @@ then
     exit
 fi
 
+runuser pi -s /bin/bash -c "/usr/bin/pmount --umask 000 --noatime -w --sync /dev/${PART} /storage/${PART}"
+
 #create a new smb share for the mounted drive
 cat <<EOS | sudo tee /etc/samba/smb.conf
 [global]
@@ -75,9 +77,9 @@ workgroup = WORKGROUP
 usershare allow guests = yes
 map to guest = bad user
 allow insecure wide links = yes
-[share]
+[ps2smb]
 Comment = Pi default shared folder
-Path = /media/$PART
+Path = /storage/$PART
 Browseable = yes
 Writeable = Yes
 only guest = no
