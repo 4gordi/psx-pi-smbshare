@@ -77,7 +77,7 @@ map to guest = bad user
 allow insecure wide links = yes
 [share]
 Comment = Pi default shared folder
-Path = /storage/$PART
+Path = /media/$PART
 Browseable = yes
 Writeable = Yes
 only guest = no
