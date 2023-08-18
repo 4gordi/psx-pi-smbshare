@@ -39,9 +39,9 @@ sudo cp /home/${USER}/samba-init.sh /usr/local/bin
 sudo mkdir -m 1777 /share
 
 # Install wifi-to-eth route settings
-sudo apt-get install -y dnsmasq
-wget https://raw.githubusercontent.com/4gordi/psx-pi-smbshare/master/wifi-to-eth-route.sh -O /home/${USER}/wifi-to-eth-route.sh
-chmod 755 /home/${USER}/wifi-to-eth-route.sh
+#sudo apt-get install -y dnsmasq
+#wget https://raw.githubusercontent.com/4gordi/psx-pi-smbshare/master/wifi-to-eth-route.sh -O /home/${USER}/wifi-to-eth-route.sh
+#chmod 755 /home/${USER}/wifi-to-eth-route.sh
 
 # Install USB automount settings
 wget https://raw.githubusercontent.com/4gordi/psx-pi-smbshare/master/automount-usb.sh -O /home/${USER}/automount-usb.sh
@@ -49,11 +49,12 @@ chmod 755 /home/${USER}/automount-usb.sh
 sudo /home/${USER}/automount-usb.sh
 
 # Set samba-init + ps3netsrv, wifi-to-eth-route, setup-wifi-access-point, and XLink Kai to run on startup
-{ echo -e "@reboot sudo bash /usr/local/bin/samba-init.sh\n@reboot sudo bash /home/${USER}/wifi-to-eth-route.sh"; } | crontab -u pi -
+#{ echo -e "@reboot sudo bash /usr/local/bin/samba-init.sh\n@reboot sudo bash /home/${USER}/wifi-to-eth-route.sh"; } | crontab -u pi -
+{ echo -e "@reboot sudo bash /usr/local/bin/samba-init.sh"; } | crontab -u pi -
 
 # Start services
 sudo /usr/local/bin/samba-init.sh
-sudo /home/${USER}/wifi-to-eth-route.sh
+#sudo /home/${USER}/wifi-to-eth-route.sh
 
 # Not a bad idea to reboot
 sudo reboot
