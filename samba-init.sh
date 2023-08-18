@@ -15,7 +15,7 @@ workgroup = WORKGROUP
 usershare allow guests = yes
 map to guest = bad user
 allow insecure wide links = yes
-[share]
+[ps2smb]
 Comment = Pi shared folder
 Path = /share
 Browseable = yes
