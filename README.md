@@ -69,9 +69,6 @@ Next, find and comment the line containing `@reboot sudo bash /home/pi/wifi-to-e
 #@reboot sudo bash /home/pi/wifi-to-eth-route.sh
 ```
 
-## Accessing the XLink Kai Service
-Visit http://smbshare:34522/ or http://<YOUR_PSX_PI_SMBSHARE_DEVICE_IP>:34522/
-
 ## Accessing the SMB Share
 With a wireless network configured, you should be able to access the SMB share by visiting `\\SMBSHARE\share` on windows or `smb://smbshare/share` on Mac / Linux.
 
