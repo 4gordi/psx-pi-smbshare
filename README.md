@@ -11,7 +11,7 @@ The following commands can be used to upgrade an existing psx-pi-smbshare device
 cd ~
 wget -O setup.sh https://raw.githubusercontent.com/4gordi/psx-pi-smbshare/master/setup.sh
 chmod 755 setup.sh
-sudo ./setup.sh
+./setup.sh
 ```
 
 ## How it works
