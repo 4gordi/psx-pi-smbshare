@@ -167,7 +167,5 @@ Don't forget to select "Save Config" when you return to "Settings"
 Thx to the following:
 * Jay-Jay for [OPL Daily Builds](https://github.com/Jay-Jay-OPL/OPL-Daily-Builds) 
 * danielb for [OPLM](http://www.ps2-home.com/forum/viewtopic.php?f=64&t=189)
-* dirkvdb for [ps3netsrv--](https://github.com/dirkvdb/ps3netsrv--)
 * arpitjindal97 for [wifi-to-eth-route.sh](https://github.com/arpitjindal97/raspbian-recipes/blob/master/wifi-to-eth-route.sh)
-* Team XLink for [XLink Kai](http://www.teamxlink.co.uk/)
 * Pul Gasari for [Testing streaming games from Raspberry Pi to PS2 using psx-pi-smbshare](https://www.youtube.com/watch?v=FJEdWW6YhJo&feature=youtu.be)
