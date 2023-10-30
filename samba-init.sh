@@ -49,9 +49,10 @@ follow symlinks = yes
 [ps2smb]
 comment = PlayStation 2
 path = /share
-browsable = yes
+browsable = no
 guest ok = yes
-public = yes
+public = no
+writable = yes
 available = yes
 read only = no
 veto files = /._*/.apdisk/.AppleDouble/.DS_Store/.TemporaryItems/.Trashes/desktop.ini/ehthumbs.db/Network Trash Folder/Temporary Items/Thumbs.db/
