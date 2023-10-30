@@ -111,9 +111,9 @@ follow symlinks = yes
 [ps2smb]
 comment = PlayStation 2
 path = /media/sda5
-browsable = no
+browsable = yes
 guest ok = yes
-public = no
+public = yes
 writable = yes
 available = yes
 read only = no
